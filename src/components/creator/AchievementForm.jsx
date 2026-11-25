@@ -292,7 +292,7 @@ export default function AchievementForm({ mode = "create" }) {
             <h4 style={{ margin: "8px 0 4px" }}>
               {formData.title.trim() || "Tytuł Twojego osiągnięcia"}
             </h4>
-            <p style={{ fontSize: "0.9rem", color: "#555", margin: "0 0 12px" }}>
+            <p style={{ fontSize: "0.9rem", color: "var(--text-muted)", margin: "0 0 12px" }}>
               {formData.description.trim() || "Brak opisu wyzwania."}
             </p>
             <div style={styles.previewMeta}>
@@ -315,7 +315,7 @@ export default function AchievementForm({ mode = "create" }) {
 
 const styles = {
   container: { maxWidth: "900px", margin: "0 auto", padding: "24px 16px" },
-  subtitle: { color: "#555", marginBottom: "24px" },
+  subtitle: { color: "var(--text-muted)", marginBottom: "24px" },
   layout: {
     display: "grid",
     gridTemplateColumns: "1.4fr 1fr",
@@ -323,37 +323,48 @@ const styles = {
     alignItems: "start",
   },
   form: {
-    background: "#fff",
+    background: "var(--bg-panel)",
     padding: "20px",
     borderRadius: "10px",
-    border: "1px solid #ddd",
+    border: "1px solid var(--line)",
     display: "flex",
     flexDirection: "column",
     gap: "16px",
   },
   fieldGroup: { display: "flex", flexDirection: "column", gap: "6px" },
-  label: { fontWeight: 600, fontSize: "0.92rem" },
+  label: { fontWeight: 600, fontSize: "0.92rem", color: "var(--text-main)" },
   input: {
     padding: "10px",
     borderRadius: "6px",
-    border: "1px solid #ccc",
+    border: "1px solid var(--line-strong)",
+    background: "var(--bg-main)",
+    color: "var(--text-main)",
     fontSize: "0.95rem",
   },
   textarea: {
     padding: "10px",
     borderRadius: "6px",
-    border: "1px solid #ccc",
+    border: "1px solid var(--line-strong)",
+    background: "var(--bg-main)",
+    color: "var(--text-main)",
     fontSize: "0.95rem",
+    fontFamily: "inherit",
     resize: "vertical",
   },
   radioGroup: { display: "flex", flexDirection: "column", gap: "8px" },
-  radioLabel: { display: "flex", alignItems: "center", gap: "8px", cursor: "pointer" },
-  errorText: { color: "#d93025", fontSize: "0.84rem", fontWeight: 500 },
-  warningText: { color: "#b06000", fontSize: "0.84rem", fontWeight: 500 },
+  radioLabel: {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+    cursor: "pointer",
+    color: "var(--text-main)",
+  },
+  errorText: { color: "#ff8a80", fontSize: "0.84rem", fontWeight: 500 },
+  warningText: { color: "var(--gold-stat)", fontSize: "0.84rem", fontWeight: 500 },
   buttonRow: { display: "flex", gap: "12px", marginTop: "8px" },
   primaryBtn: {
-    background: "#2563eb",
-    color: "#fff",
+    background: "var(--purple-accent)",
+    color: "var(--bg-main)",
     border: "none",
     padding: "10px 18px",
     borderRadius: "6px",
@@ -361,29 +372,31 @@ const styles = {
     cursor: "pointer",
   },
   secondaryBtn: {
-    background: "#f3f4f6",
-    color: "#1f2937",
-    border: "1px solid #d1d5db",
+    background: "transparent",
+    color: "var(--text-main)",
+    border: "1px solid var(--line-strong)",
     padding: "10px 18px",
     borderRadius: "6px",
     cursor: "pointer",
   },
   previewBox: {
-    background: "#f8fafc",
+    background: "var(--bg-panel-alt)",
     padding: "18px",
     borderRadius: "10px",
-    border: "1px dashed #cbd5e1",
+    border: "1px dashed var(--line-strong)",
+    color: "var(--text-main)",
   },
   previewCard: {
-    background: "#fff",
+    background: "var(--bg-panel)",
     padding: "16px",
     borderRadius: "8px",
-    border: "1px solid #e2e8f0",
+    border: "1px solid var(--line)",
   },
   badge: {
     display: "inline-block",
-    background: "#e0e7ff",
-    color: "#1e40af",
+    background: "var(--rarity-epickie-bg)",
+    color: "var(--rarity-epickie-text)",
+    border: "1px solid var(--rarity-epickie-border)",
     padding: "3px 8px",
     borderRadius: "4px",
     fontSize: "0.78rem",
@@ -393,7 +406,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     fontSize: "0.85rem",
-    borderTop: "1px solid #eee",
+    borderTop: "1px solid var(--line)",
     paddingTop: "8px",
   },
 };
