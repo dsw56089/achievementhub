@@ -1,0 +1,48 @@
+:root {
+  /* Tła i główne powierzchnie */
+  --bg-main: #0b0d14;
+  --bg-panel: #131620;
+  --bg-panel-alt: #12151e;
+  --bg-hero: #171723;
+  --bg-card-cover: #20202b;
+  --bg-achievement-icon: #1c1e2a;
+
+  /* Teksty */
+  --text-main: #f4f2fb;
+  --text-muted: #9293a5;
+  --text-subtle: #858698;
+  --text-dimmed: #77798b;
+
+  /* Akcenty fioletu / brandu */
+  --purple: #a78bfa;
+  --purple-light: #b49aff;
+  --purple-bright: #c4b3ff;
+  --purple-accent: #ae95ff;
+  
+  /* Linie i obramowania */
+  --line: rgba(255, 255, 255, .085);
+  --line-strong: rgba(255, 255, 255, .20);
+
+  /* Kolory rzadkości i statusów */
+  --rarity-epickie-text: #bd9aff;
+  --rarity-epickie-bg: rgba(167, 139, 250, 0.075);
+  --rarity-epickie-border: rgba(167, 139, 250, 0.17);
+
+  --rarity-legendarne-text: #eac36e;
+  --rarity-legendarne-bg: rgba(233, 185, 90, 0.075);
+  --rarity-legendarne-border: rgba(233, 185, 90, 0.17);
+
+  --rarity-rzadkie-text: #79c8df;
+  --rarity-rzadkie-bg: rgba(103, 200, 229, 0.075);
+  --rarity-rzadkie-border: rgba(103, 200, 229, 0.17);
+
+  --rarity-pospolite-text: #9b9eaa;
+
+  --success-green: #69d6a3;
+  --success-green-text: #78d7a7;
+  --success-green-bg: rgba(101, 201, 154, 0.1);
+  --success-green-border: rgba(101, 201, 154, 0.31);
+
+  --gold-text: #c4ad75;
+  --gold-stat: #e9bd69;
+}
