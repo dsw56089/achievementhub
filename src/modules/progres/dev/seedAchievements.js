@@ -9,7 +9,7 @@
 export const SEED_ACHIEVEMENTS = [
   {
     id: 'seed-1',
-    gameId: 'g1',
+    gameId: 'elden-ring',
     title: 'Wygraj 10 meczów',
     description: 'Zwycięstwa w trybie rankingowym.',
     type: 'licznik',
@@ -19,7 +19,7 @@ export const SEED_ACHIEVEMENTS = [
   },
   {
     id: 'seed-2',
-    gameId: 'g1',
+    gameId: 'elden-ring',
     title: 'Ukończ samouczek',
     description: '',
     type: 'jednorazowe',
@@ -29,7 +29,7 @@ export const SEED_ACHIEVEMENTS = [
   },
   {
     id: 'seed-3',
-    gameId: 'g2',
+    gameId: 'hades',
     title: 'Zbierz 5 truskawek',
     description: '',
     type: 'licznik',
@@ -39,7 +39,7 @@ export const SEED_ACHIEVEMENTS = [
   },
   {
     id: 'seed-4',
-    gameId: 'g2',
+    gameId: 'hades',
     title: 'Pokonaj bossa bez śmierci',
     description: '',
     type: 'jednorazowe',

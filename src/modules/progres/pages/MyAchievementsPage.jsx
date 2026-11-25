@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AchievementCard from '../components/AchievementCard';
+import AchievementCreatorActions from '../../../components/creator/AchievementCreatorActions';
 import { useMyAchievements } from '../hooks/useMyAchievements';
 import { useGames } from '../hooks/useGames';
 import { SEED_ACHIEVEMENTS } from '../dev/seedAchievements';
@@ -102,6 +103,7 @@ export default function MyAchievementsPage() {
                 onIncrement={increment}
                 onComplete={complete}
                 onReset={handleReset}
+                actions={<AchievementCreatorActions achievementId={achievement.id} />}
               />
             </li>
           ))}
